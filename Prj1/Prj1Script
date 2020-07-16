@@ -1,0 +1,161 @@
+sudarshan@sudarshan-Aspire-E5-575G:~/Prj1$ make
+make: Nothing to be done for 'all'.
+sudarshan@sudarshan-Aspire-E5-575G:~/Prj1$ ./mycompress test numbers
+
+Correct number of Arguments
+
+ InputFile	: test
+ OutputFile	: numbers
+
+ Output file not there creating one now
+
+Program Successfully Compressed your file 
+
+sudarshan@sudarshan-Aspire-E5-575G:~/Prj1$ ./mycompress testing numbers
+
+Correct number of Arguments
+
+ InputFile	: testing
+ OutputFile	: numbers
+
+Cannot open file : testing
+
+Exiting now
+sudarshan@sudarshan-Aspire-E5-575G:~/Prj1$ ./mydecompress numbers output
+
+correct number of Arguments
+
+ Input File	: numbers
+ Output File	: output
+
+File created successfully
+
+Program Successfully Decompressed your file
+
+sudarshan@sudarshan-Aspire-E5-575G:~/Prj1$ ./mydecompress number output
+
+correct number of Arguments
+
+ Input File	: number
+ Output File	: output
+
+Cannot open file : number
+
+Exiting now
+sudarshan@sudarshan-Aspire-E5-575G:~/Prj1$ ./forkcompress test output2
+
+Correct number of Arguments
+
+ InputFile	: test
+ OutputFile	: output2
+
+ Output file not there creating one now
+
+Program Successfully Compressed your file 
+
+Fork executed successfully
+sudarshan@sudarshan-Aspire-E5-575G:~/Prj1$ ./forkcompress testing output2
+
+Correct number of Arguments
+
+ InputFile	: testing
+ OutputFile	: output2
+
+Cannot open file : testing
+
+Exiting now
+Fork executed successfully
+sudarshan@sudarshan-Aspire-E5-575G:~/Prj1$ ./pipecompress test pipeoutput
+
+ InputFile	: test
+ Output File	: pipeoutput
+sudarshan@sudarshan-Aspire-E5-575G:~/Prj1$ ^C
+sudarshan@sudarshan-Aspire-E5-575G:~/Prj1$ 
+sudarshan@sudarshan-Aspire-E5-575G:~/Prj1$ ./pipecompress testing pipeoutput
+
+ InputFile	: testing
+ Output File	: pipeoutput
+
+Cannot open file : testing
+
+Exiting now
+sudarshan@sudarshan-Aspire-E5-575G:~/Prj1$ ./parkfork test park
+
+ InputFile	: test
+ OutputFile	: park
+
+ File created 
+
+Child Process Created	: 6
+sudarshan@sudarshan-Aspire-E5-575G:~/Prj1$ ./parkfork testing park
+
+ InputFile	: testing
+ OutputFile	: park
+
+Cannot open file : testing
+
+Exiting now
+sudarshan@sudarshan-Aspire-E5-575G:~/Prj1$ ./minishell
+
+miniShell > ls
+dupshell	minishell    mycompress.c    output2	   pipecompress.c
+dupshell.c	minishell.c  mydecompress    park	   pipeoutput
+forkcompress	moreshell    mydecompress.c  parkfork	   README
+forkcompress.c	moreshell.c  numbers	     parkfork.c    test
+makefile	mycompress   output	     pipecompress
+
+miniShell > date
+Sun Sep 30 00:22:23 PDT 2018
+
+miniShell > exit
+sudarshan@sudarshan-Aspire-E5-575G:~/Prj1$ ./moreshell
+
+MoreShell > ls
+dupshell	minishell    mycompress.c    output2	   pipecompress.c
+dupshell.c	minishell.c  mydecompress    park	   pipeoutput
+forkcompress	moreshell    mydecompress.c  parkfork	   README
+forkcompress.c	moreshell.c  numbers	     parkfork.c    test
+makefile	mycompress   output	     pipecompress
+
+MoreShell > ls -l
+total 180
+-rwxr-xr-x 1 sudarshan sudarshan 13256 Sep 30 00:13 dupshell
+-rw-r--r-- 1 sudarshan sudarshan  2081 Sep 29 23:57 dupshell.c
+-rwxr-xr-x 1 sudarshan sudarshan  8432 Sep 30 00:10 forkcompress
+-rw-r--r-- 1 sudarshan sudarshan   852 Sep 29 21:13 forkcompress.c
+-rw-r--r-- 1 sudarshan sudarshan   559 Sep 30 00:13 makefile
+-rwxr-xr-x 1 sudarshan sudarshan  8856 Sep 30 00:12 minishell
+-rw-r--r-- 1 sudarshan sudarshan  1051 Sep 29 23:26 minishell.c
+-rwxr-xr-x 1 sudarshan sudarshan  8856 Sep 30 00:12 moreshell
+-rw-r--r-- 1 sudarshan sudarshan  1037 Sep 29 23:31 moreshell.c
+-rwxr-xr-x 1 sudarshan sudarshan 13248 Sep 30 00:06 mycompress
+-rw-r--r-- 1 sudarshan sudarshan  3541 Sep 29 22:56 mycompress.c
+-rwxr-xr-x 1 sudarshan sudarshan 13328 Sep 30 00:10 mydecompress
+-rw-r--r-- 1 sudarshan sudarshan  2938 Sep 30 00:10 mydecompress.c
+-rw-r--r-- 1 sudarshan sudarshan    97 Sep 30 00:15 numbers
+-rw-r--r-- 1 sudarshan sudarshan   149 Sep 30 00:16 output
+-rw-r--r-- 1 sudarshan sudarshan    97 Sep 30 00:17 output2
+-rw-r--r-- 1 sudarshan sudarshan    99 Sep 30 00:21 park
+-rwxr-xr-x 1 sudarshan sudarshan 13432 Sep 30 00:12 parkfork
+-rw-r--r-- 1 sudarshan sudarshan  3772 Sep 29 23:22 parkfork.c
+-rwxr-xr-x 1 sudarshan sudarshan 13536 Sep 30 00:12 pipecompress
+-rw-r--r-- 1 sudarshan sudarshan  4202 Sep 30 00:12 pipecompress.c
+-rw-r--r-- 1 sudarshan sudarshan     0 Sep 30 00:20 pipeoutput
+-rw-r--r-- 1 sudarshan sudarshan   739 Sep 29 23:58 README
+-rw-rw-r-- 1 sudarshan sudarshan   149 Sep 12 11:22 test
+MoreShell > exit
+sudarshan@sudarshan-Aspire-E5-575G:~/Prj1$ ./dupshell
+
+DupShell > ls | w
+ 00:23:41 up  5:13,  1 user,  load average: 0.18, 0.34, 0.44
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+sudarshan    :0       :0               Sat12   ?xdm?   2:28   0.00s /usr/lib/gdm3/g
+
+DupShell > ls | wc
+     24      24     252
+
+DupShell > ls -l -s | wc
+     25     242    1390
+
+DupShell > exit
+sudarshan@sudarshan-Aspire-E5-575G:~/Prj1$ 

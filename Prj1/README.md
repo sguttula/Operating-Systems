@@ -25,7 +25,7 @@ a little bit more power then before
 
 
 ## 8 dupeshell
-This program creates your own mini unix shell like before but this time were using pipres and  the dup2 system call to redirect the output 
+This program creates your own mini unix shell like before but this time were using pipes and  the dup2 system call to redirect the output 
 
 
 ## 9 posix threads

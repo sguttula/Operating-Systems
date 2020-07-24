@@ -32,6 +32,8 @@ This program creates your own mini unix shell like before but this time were usi
 This program checks the time speed of the threads,  also we didnt now if it was to be cpu clock or "wall clock" since it does specify which one 
 at cpu speed 
 
+##
+
 Time complexity:
 Same for both sequential and fork, respectively;
 Time taken: 0.001000, 

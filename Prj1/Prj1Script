@@ -1,7 +1,7 @@
 sudarshan@sudarshan-Aspire-E5-575G:~/Prj1$ make
 make: Nothing to be done for 'all'.
 sudarshan@sudarshan-Aspire-E5-575G:~/Prj1$ ./mycompress test numbers
-
+ 
 Correct number of Arguments
 
  InputFile	: test

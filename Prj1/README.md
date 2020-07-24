@@ -16,7 +16,7 @@ This program reads in 2 files and compress it  but  this is done with pipes rath
 This programs does the same compression from program one but the file now will be divided into equal chunks
 
 ## 6 minishell
-This program creates your own mini unix shell but with limited usage 
+This program creates your own mini unix shell but with limited usage
 
 
 ## 7 moreshell

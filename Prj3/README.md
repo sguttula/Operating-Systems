@@ -21,5 +21,5 @@ and uses the same dserver from the thrid program. It implements a single directo
 
 ## Observation for problem 5:
 We must keep track of directory and file so that names can repeat and track of the current directory to print pwd command.
- mkdir and cd are like C and R of file names. similarly rmdir is like Delete command.
+ mkdir and cd are like C and R of file names. similarly rmdir is like Delete command. 
  
